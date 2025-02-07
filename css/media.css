@@ -1,0 +1,180 @@
+/* ! CONTAINER MEDIA */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* ! HEADER MEDIA */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    header .toggle-menu {
+        display: block;
+    }
+
+    header .toggle-menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 50%);
+    }
+
+    header ul a {
+        padding: 15px !important;
+    }
+}
+
+/* ! LANDING MEDIA */
+@media screen and (max-width: 768px) {
+    #landing .landing-content {
+        width: 100%;
+    }
+
+    #landing .landing-caption {
+        max-width: 100%;
+    }
+
+    #landing .change-background {
+        display: none;
+    }
+}
+
+/* ! SERVICES MEDIA */
+@media screen and (min-width: 768px) {
+    #services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 60px 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #services .srv {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #services .srv i {
+        margin: 0 0 30px;
+    }
+}
+
+/* ! DESIGNE MEDIA */
+@media screen and (max-width: 768px) {
+    #designe .designe-image {
+        display: none;
+    }
+}
+
+/* ! PORTFOLIO MEDIA */
+@media screen and (min-width: 768px) {
+    #portfolio .port {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #portfolio .port {
+        flex-basis: 25%;
+    }
+}
+
+/* ! ABOUT MEDIA */
+@media screen and (max-width: 768px) {
+    #about img {
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+
+/* ! STATS MEDIA */
+@media screen and (max-width: 768px) {
+    #stats .state {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #stats .state {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #stats .state {
+        flex-basis: 25%;
+    }
+}
+
+/* ! SKILLS MEDIA */
+@media screen and (min-width: 992px) {
+    #skills .container>div {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #skills .testimonials .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #skills .testimonials .content img {
+        margin: 0 auto 20px;
+    }
+}
+
+/* ! SUBSCRIBE  MEDIA */
+@media screen and (max-width: 992px) {
+    #subscribe .container {
+        flex-direction: column;
+    }
+
+    #subscribe p {
+        margin: 30px 0 0;
+    }
+}
+
+/* ! CONTACT  MEDIA */
+@media screen and (max-width: 768px) {
+    #contact .contact-details {
+        flex-direction: column;
+    }
+
+    #contact form input[type="submit"] {
+        margin: 0 auto;
+    }
+
+    #contact .info {
+        order: -1;
+        text-align: center;
+    }
+
+    #contact .info h4:nth-of-type(2) {
+        margin-top: 40px;
+    }
+
+    #contact .info address {
+        margin-bottom: 40px;
+    }
+}
